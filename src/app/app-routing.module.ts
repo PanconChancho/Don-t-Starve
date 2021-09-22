@@ -23,6 +23,14 @@ const routes: Routes = [
     path: 'input',
     loadChildren: () => import('./pages/input/input.module').then( m => m.InputPageModule)
   },
+  {
+    path: 'iniciar',
+    loadChildren: () => import('./pages/iniciar/iniciar.module').then( m => m.IniciarPageModule)
+  },
+  {
+    path: 'registrarse',
+    loadChildren: () => import('./pages/registrarse/registrarse.module').then( m => m.RegistrarsePageModule)
+  },
   
 ];
 
