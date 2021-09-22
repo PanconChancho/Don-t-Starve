@@ -5,6 +5,7 @@ import {
   Validators,
   FormBuilder
 } from '@angular/forms';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-iniciar',
@@ -13,17 +14,29 @@ import {
 })
 export class IniciarPage implements OnInit {
 
-  formularioLogin: FormGroup;
+  formularioIniciar: FormGroup;
 
-  constructor(public fb: FormBuilder) { 
+  constructor(public fb: FormBuilder,
+    public alertController: AlertController) { 
 
-    this.formularioLogin = this.fb.group({
+    this.formularioIniciar = this.fb.group({
       'nombre': new FormControl("",Validators.required),
       'password': new FormControl("",Validators.required)
     })
   }
 
   ngOnInit() {
+
+}
+async presentAlert(){
+    const alert = await this.alertController.create({
+      header: 'ALERTA',
+      subHeader: 'Datos Incorrectos',
+      message: 'Ingrese datos validos',
+      buttons: ['Aceptar']
+    });
+  
+    await alert.present();
   }
 
 }

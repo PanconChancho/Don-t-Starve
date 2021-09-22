@@ -1,5 +1,13 @@
 <ion-header>
-  <ion-toolbar color="primary">
+  <ion-toolbar color="secondary" [class.show-background]="showToolbar">
+    <ion-buttons slot="start">
+      <ion-back-button 
+        defaultHref="/inicio"
+        text="Volver"
+        color="tertiary"
+        mode="ios">
+      </ion-back-button>
+    </ion-buttons>
     <ion-title>Iniciar</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -7,30 +15,28 @@
 <ion-content>
   <ion-card>
     <ion-card-header>
-      <ion-card-title>login</ion-card-title>
+      <ion-card-title>Iniciar Sesion</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      <form [formGroup]="formularioLogin">
+      <form [formGroup]="formularioIniciar">
         <ion-item>
           <ion-label position= "floating">Nombre</ion-label>
-          <ion-input formControlName="nombre"></ion-input>
+          <ion-input formControlName="nombre"type="nombre"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position= "floating">Password</ion-label>
+          <ion-label position= "floating">Contraseña</ion-label>
           <ion-input formControlName="password" type="password"></ion-input>
         </ion-item>
       </form>
       <br>
-      <ion-button (click)="ingresar()">
+      <ion-button (click)="presentAlert()" expand="block" >
         Ingresar
-      </ion-button>
+        </ion-button>
     </ion-card-content>
   </ion-card>
 </ion-content>
 <ion-footer>
-  <ion-toolbar >
-    <ion-button slot="end">
-    <ion-button [routerLink]="['/Registrarse']">Registrarse</ion-button>
+    <ion-button routerLink = "/registrarse"(click)="onClick()" expand="block" fill="clear" shape="round">
+      Registrarse
     </ion-button>
-  </ion-toolbar>
 </ion-footer>
