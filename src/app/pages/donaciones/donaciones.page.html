@@ -15,28 +15,59 @@
 
 <ion-content class="ion-padding">
 
-  <ion-list>
-      <ion-item *ngFor= "let d of componentes"
-        [routerLink] = "d.redirecTo"
-        detail="true">
-        <ion-icon [name]="d.icon" slot="start" color="primary" ></ion-icon>
-        {{d.name}}
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Donacion 1</ion-card-subtitle>
+      <ion-card-title>Accion contra el hambre</ion-card-title>
+    </ion-card-header>
 
-    </ion-item>
-  </ion-list>
+    <ion-card-content>
+     Accion contra el hambre es una ONG en donde puedes donar y ayudar en la mision de acabar con la ambruna en muchos paises, esta ong ayuda a casi todo el mundo, dando alimentos a las personas mas necesitadas, el objetivo de esta Organizacion es ayudar a erradicar el hambre en la mayor parte del mundo, todas tus donaciones iran directamente a las personas que verdaderamente lo necesitan,
+       <br> (para donar solo haz click en la imagen)
+    </ion-card-content>
+    <br>
+    <br>
+    <a href="https://www.accioncontraelhambre.org/es/actua/dona" target="_blank"><ion-img src="/assets/img/accion.jpg" ></ion-img></a>
+  </ion-card>
 
-  <ion-buttom routerLink="/accion">
-    Red de Alimentos
+  <br>
+  <br>
 
-  </ion-buttom>
 
-  <ion-buttom routerLink="/red">
-    Accion contra el Hambre
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Donacion 2</ion-card-subtitle>
+      <ion-card-title>Red de alimentos</ion-card-title>
+    </ion-card-header>
 
-  </ion-buttom>
+    <ion-card-content>
+     Red de alimentos da una presentacion muy amplia y concreta en su pagina web. Son una organizacion privada sin fines de lucro que creó el primer banco de alimentos en chile en el año 2010. <br> 
+     a través de un proceso eficiente y trazable, unieron a empresas y organizaciones sociales rescatando alimentos, pañales y productos de higiene personal aptos para el consumo humano, listos para entregarselos a los que mas lo necvesitan. <br>
+     (haz click en la imagen para comenzar a donar)
+    </ion-card-content>
+    <br>
+    <br>
+    <a href="https://www.redalimentos.cl/donar/" target="_blank"><ion-img src="/assets/img/red.jpg" ></ion-img></a>
+  </ion-card>
+  
+  <br>
+  <br>
 
-  <ion-butttom routerLink="/care">
-    Care.org
-  </ion-butttom>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Donacion 3</ion-card-subtitle>
+      <ion-card-title>Care.org</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+     care.org se toma su trabajo muy enserio y nos da una breve explicacion de lo que es situacion actual con millones de niños y personas en general, el objetivo de este es ayudar a todas las personas afectadas con situacion pais, nos comentan esto: <br>
+    "Las familias en Afganistán que enfrentan una rápida escalada de violencia corren por sus vidas. Un millón de niños sufrirán desnutrición severa este año y podrían morir sin ayuda. Dona ahora para proporcionar comida, agua y refugio y ayudar a salvar vidas."
+     <br> (haz click en la imagen para comenzar a donar)
+    </ion-card-content>
+    <br>
+    <br>
+    <a href="https://my.care.org/site/Donation2?29334.donation=form1&df_id=29334&mfc_pref=T&s_src=172220000000" target="_blank"><ion-img src="/assets/img/care.jpg" ></ion-img></a>
+  </ion-card>
+
 
 </ion-content>
