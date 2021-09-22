@@ -31,6 +31,11 @@ export class InicioPage implements OnInit {
       name: 'Input', 
       redirecTo: '/input'
     },
+    {
+      icon: 'heart-circle-outline',
+      name: 'Donaciones',
+      redirecTo: '/donaciones'
+    },
 
    
   ]

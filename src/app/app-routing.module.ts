@@ -24,12 +24,12 @@ const routes: Routes = [
     loadChildren: () => import('./pages/input/input.module').then( m => m.InputPageModule)
   },
   {
-    path: 'iniciar',
-    loadChildren: () => import('./pages/iniciar/iniciar.module').then( m => m.IniciarPageModule)
+    path: 'donaciones',
+    loadChildren: () => import('./pages/donaciones/donaciones.module').then( m => m.DonacionesPageModule)
   },
   {
-    path: 'registrarse',
-    loadChildren: () => import('./pages/registrarse/registrarse.module').then( m => m.RegistrarsePageModule)
+    path: 'pages',
+    loadChildren: () => import('./pages/pages.module').then( m => m.PagesPageModule)
   },
   
 ];

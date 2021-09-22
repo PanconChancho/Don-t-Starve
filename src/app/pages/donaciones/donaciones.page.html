@@ -1,0 +1,42 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button
+        defaultHref="/inicio"
+        text="Volver"
+        color="primary"
+        mode="ios">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Donaciones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-list>
+      <ion-item *ngFor= "let d of componentes"
+        [routerLink] = "d.redirecTo"
+        detail="true">
+        <ion-icon [name]="d.icon" slot="start" color="primary" ></ion-icon>
+        {{d.name}}
+
+    </ion-item>
+  </ion-list>
+
+  <ion-buttom routerLink="/accion">
+    Red de Alimentos
+
+  </ion-buttom>
+
+  <ion-buttom routerLink="/red">
+    Accion contra el Hambre
+
+  </ion-buttom>
+
+  <ion-butttom routerLink="/care">
+    Care.org
+  </ion-butttom>
+
+</ion-content>
