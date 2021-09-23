@@ -22,14 +22,19 @@ export class InicioPage implements OnInit {
       redirecTo: '/donaciones'
     },
     {
-      icon: 'heart-circle-outline',
+      icon: 'person',
       name: 'iniciar sesion',
       redirecTo: '/iniciar'
     },
     {
-      icon: 'heart-circle-outline',
+      icon: 'save',
       name: 'Registrarse',
       redirecTo: '/registrarse'
+    },
+    {
+      icon: 'call',
+      name: 'Contactanos',
+      redirecTo: '/contactanos'
     },
 
    
