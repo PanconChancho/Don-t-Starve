@@ -19,21 +19,20 @@ export class AppComponent {
 
   componentes : Componente[] =[
     {
-      icon: 'heart-circle-outline',
-      name: 'Donaciones',
-      redirecTo: '/donaciones'
+      icon: 'paw-outline',
+      name: 'Action Sheet', 
+      redirecTo: '/action-sheet'
     },
     {
-      icon: 'heart-circle-outline',
-      name: 'iniciar sesion',
-      redirecTo: '/iniciar'
+      icon: 'sunny-outline', 
+      name: 'Alert', 
+      redirecTo: '/alert'
     },
     {
-      icon: 'heart-circle-outline',
-      name: 'Registrarse',
-      redirecTo: '/registrarse'
+      icon: 'bug-outline', 
+      name: 'Input', 
+      redirecTo: '/input'
     },
-
    
   ]
 
