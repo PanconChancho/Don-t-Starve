@@ -36,6 +36,16 @@ export class InicioPage implements OnInit {
       name: 'Donaciones',
       redirecTo: '/donaciones'
     },
+    {
+      icon: 'heart-circle-outline',
+      name: 'iniciar sesion',
+      redirecTo: '/iniciar'
+    },
+    {
+      icon: 'heart-circle-outline',
+      name: 'Registrarse',
+      redirecTo: '/registrarse'
+    },
 
    
   ]
