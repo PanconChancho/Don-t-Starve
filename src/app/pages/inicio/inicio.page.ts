@@ -36,6 +36,11 @@ export class InicioPage implements OnInit {
       name: 'Contactanos',
       redirecTo: '/contactanos'
     },
+    {
+      icon: 'person',
+      name: 'Donadores',
+      redirecTo: '/donadores'
+    },
 
    
   ]

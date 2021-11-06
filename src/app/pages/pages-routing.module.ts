@@ -23,6 +23,10 @@ const routes: Routes = [
   {
     path: 'contactanos',
     loadChildren: () => import('./contactanos/contactanos.module').then( m => m.ContactanosPageModule)
+  },
+  {
+    path: 'donadores',
+    loadChildren: () => import('./donadores/donadores.module').then( m => m.DonadoresPageModule)
   }
 ];
 
