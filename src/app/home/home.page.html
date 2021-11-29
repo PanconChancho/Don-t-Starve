@@ -1,0 +1,55 @@
+<ion-header >
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+         
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-avatar>
+        <ion-img src="/assets/img/logo.jpg"></ion-img>
+      </ion-avatar>
+    </ion-buttons>
+
+    <ion-title>inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+   
+    <ion-list>
+      <ion-item *ngFor="let c of componentes"
+          [routerLink] = "c.redirecTo"
+          detail="true"> 
+          <ion-icon [name]="c.icon"
+            slot="start"
+            color="primary"></ion-icon> 
+            {{c.name}}
+      </ion-item>
+   </ion-list>
+   <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Quienes somos?</ion-card-subtitle>
+      <ion-card-title>Objetivo de la aplicacion</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content text-color="primary">
+    Nuestra app esta hecha y diseñada para gente que únicamente quiera ayudar a detener el hambre en el mundo, para donar sólo debes tener ganas y aportar voluntariamente lo que tú corazon te dicte. <br>
+    Por eso es que nosotros queremos ayudarte a encontrar la mejor solución para ayudar al resto, la aplicación que esta viendo fue diseñada para garantizarle una donación segura y a sú agrado.  <br>
+    todo lo que hace esta aplicación es resumir el objetivo de organizaciones, así ústed solo debera elegir cúal guste más y comenzar a donar sin tener que buscar ni leer todo, ya que la aplicación lo hará por usted, solo necesita un poco de dinero y las ganas de ayudar. <br>
+    recuerde que toda la ayuda será requerida, hasta lo minimo sirve, un cordial saludo y esperando que disfrute de la app se despide Don't starve.
+    </ion-card-content>
+    <br>
+    <br>
+    <ion-img src="/assets/img/logo.jpg" ></ion-img>
+  </ion-card>
+
+   <!--
+   <ion-button routerLink="/alert">Alert</ion-button>
+   <ion-button routerLink="/action-sheet">Action Sheet</ion-button>-->
+
+    
+</ion-content>

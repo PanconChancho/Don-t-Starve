@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "login-ng-33afb": {
+      "hosting": {
+        "app": [
+          "login-ng-33afb"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "login-ng-33afb"
+  }
+}

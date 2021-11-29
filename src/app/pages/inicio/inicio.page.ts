@@ -24,22 +24,23 @@ export class InicioPage implements OnInit {
     {
       icon: 'person',
       name: 'iniciar sesion',
-      redirecTo: '/iniciar'
+      redirecTo: '/login'
     },
     {
       icon: 'save',
       name: 'Registrarse',
-      redirecTo: '/registrarse'
+      redirecTo: '/register'
     },
-    {
-      icon: 'call',
-      name: 'Contactanos',
-      redirecTo: '/contactanos'
-    },
+
     {
       icon: 'person',
       name: 'Donadores',
       redirecTo: '/donadores'
+    },
+    {
+      icon: 'person',
+      name: 'Datos',
+      redirecTo: '/datos'
     },
 
    

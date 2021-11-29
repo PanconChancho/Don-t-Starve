@@ -1,5 +1,5 @@
 import { Component, ComponentFactoryResolver, OnInit } from '@angular/core';
-import { Article } from 'src/app/interfaces/interfaces';
+import { Article } from '../../interfaces/interfaces';
 import { Proveedor1Service } from '../../proveedor1.service';
 
 @Component({

@@ -3,8 +3,12 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
+  {
     path: '',
-    redirectTo: 'inicio',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
@@ -12,42 +16,25 @@ const routes: Routes = [
     loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
   },
   {
-    path: 'action-sheet',
-    loadChildren: () => import('./pages/action-sheet/action-sheet.module').then( m => m.ActionSheetPageModule)
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   },
   {
-    path: 'alert',
-    loadChildren: () => import('./pages/alert/alert.module').then( m => m.AlertPageModule)
+    path: 'register',
+    loadChildren: () => import('./pages/register/register.module').then( m => m.RegisterPageModule)
   },
   {
-    path: 'input',
-    loadChildren: () => import('./pages/input/input.module').then( m => m.InputPageModule)
-  },
-  {
-    path: 'donaciones',
-    loadChildren: () => import('./pages/donaciones/donaciones.module').then( m => m.DonacionesPageModule)
-  },
-  {
-    path: 'pages',
-    loadChildren: () => import('./pages/pages.module').then( m => m.PagesPageModule)
-  },
-  {
-    path: 'iniciar',
-    loadChildren: () => import('./pages/iniciar/iniciar.module').then( m => m.IniciarPageModule)
-  },
-  {
-    path: 'registrarse',
-    loadChildren: () => import('./pages/registrarse/registrarse.module').then( m => m.RegistrarsePageModule)
-  },
-  {
-    path: 'contactanos',
-    loadChildren: () => import('./pages/contactanos/contactanos.module').then( m => m.ContactanosPageModule)
+    path: 'datos',
+    loadChildren: () => import('./pages/datos/datos.module').then( m => m.DatosPageModule)
   },
   {
     path: 'donadores',
     loadChildren: () => import('./pages/donadores/donadores.module').then( m => m.DonadoresPageModule)
   },
-  
+  {
+    path: 'donaciones',
+    loadChildren: () => import('./pages/donaciones/donaciones.module').then( m => m.DonacionesPageModule)
+  },
 ];
 
 @NgModule({

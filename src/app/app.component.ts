@@ -26,12 +26,12 @@ export class AppComponent {
     {
       icon: 'person',
       name: 'iniciar sesion',
-      redirecTo: '/iniciar'
+      redirecTo: '/login'
     },
     {
       icon: 'save',
       name: 'Registrarse',
-      redirecTo: '/registrarse'
+      redirecTo: '/register'
     },
     {
       icon: 'call',
